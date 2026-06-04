@@ -25,13 +25,21 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
+      <div className="absolute inset-0 bg-black/40 z-[1]" />
+      <div className="relative z-10 text-center text-white px-6">
+        <p className="uppercase tracking-widest text-sm mb-4 opacity-80">Авиа Некст Тур</p>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
+          МИР<br/>ЖДЁТ ТЕБЯ
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-8">
+          Лучшие туры по всему миру — с заботой о каждой детали путешествия
         </p>
+        <a
+          href="#tours"
+          className="inline-block bg-white text-black px-8 py-3 uppercase text-sm tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300"
+        >
+          Подобрать тур
+        </a>
       </div>
     </div>
   );

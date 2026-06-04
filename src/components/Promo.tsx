@@ -25,14 +25,25 @@ export default function Promo() {
         </motion.div>
       </div>
 
-      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg">
-        Анатомия возможностей
+      <div className="absolute inset-0 bg-black/50 z-[1]" />
+      <h3 className="absolute top-12 left-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg tracking-widest">
+        Почему выбирают нас
       </h3>
 
-      <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-5xl z-10">
-        Каждая секция — рамка для твоей истории. Формируй её, миксуй и позволь контенту
-        литься в неожиданные паттерны, заставляя листать дальше.
-      </p>
+      <div className="absolute bottom-12 left-6 right-6 z-10 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl">
+        <div className="text-white border-l border-white/40 pl-4">
+          <p className="text-3xl md:text-4xl font-bold mb-2">1200+</p>
+          <p className="text-sm opacity-80 uppercase tracking-wide">Довольных туристов</p>
+        </div>
+        <div className="text-white border-l border-white/40 pl-4">
+          <p className="text-3xl md:text-4xl font-bold mb-2">50+</p>
+          <p className="text-sm opacity-80 uppercase tracking-wide">Направлений</p>
+        </div>
+        <div className="text-white border-l border-white/40 pl-4">
+          <p className="text-3xl md:text-4xl font-bold mb-2">10 лет</p>
+          <p className="text-sm opacity-80 uppercase tracking-wide">На рынке туризма</p>
+        </div>
+      </div>
     </div>
   );
 }
